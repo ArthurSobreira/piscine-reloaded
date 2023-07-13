@@ -14,7 +14,7 @@ OBJECTS = \
 	./ft_putchar.o \
 	./ft_putstr.o \
 	./ft_display_file.o \
-	./main.o
+	./main.o \
 
 all: $(NAME)
 
