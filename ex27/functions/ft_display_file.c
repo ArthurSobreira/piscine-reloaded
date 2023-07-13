@@ -6,7 +6,7 @@
 /*   By: arsobrei <arsobrei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/12 18:05:35 by arsobrei          #+#    #+#             */
-/*   Updated: 2023/07/13 11:35:09 by arsobrei         ###   ########.fr       */
+/*   Updated: 2023/07/13 11:57:45 by arsobrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ int	ft_display_file(char *file_name)
 		}
 		else if (byte_nb > 0)
 		{
-			write(1, &buff[0], 1);
+			ft_putchar(buff[0]);
 		}
 	}
 	close(file_desc);
