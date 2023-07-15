@@ -6,7 +6,7 @@
 /*   By: arsobrei <arsobrei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/12 18:05:35 by arsobrei          #+#    #+#             */
-/*   Updated: 2023/07/13 11:57:45 by arsobrei         ###   ########.fr       */
+/*   Updated: 2023/07/15 10:53:05 by arsobrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	ft_display_file(char *file_name)
 {
 	int		file_desc;
 	int		byte_nb;
-	char	buff[1];
+	char	buff;
 
 	byte_nb = 1;
 	file_desc = open(file_name, O_RDONLY);
@@ -26,14 +26,14 @@ int	ft_display_file(char *file_name)
 	}
 	while (byte_nb > 0)
 	{
-		byte_nb = read(file_desc, buff, 1);
+		byte_nb = read(file_desc, &buff, 1);
 		if (byte_nb == -1)
 		{
 			return (0);
 		}
 		else if (byte_nb > 0)
 		{
-			ft_putchar(buff[0]);
+			ft_putchar(buff);
 		}
 	}
 	close(file_desc);
