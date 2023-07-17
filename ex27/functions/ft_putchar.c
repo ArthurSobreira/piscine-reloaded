@@ -6,11 +6,11 @@
 /*   By: arsobrei <arsobrei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/12 18:03:55 by arsobrei          #+#    #+#             */
-/*   Updated: 2023/07/13 10:31:53 by arsobrei         ###   ########.fr       */
+/*   Updated: 2023/07/17 18:14:46 by arsobrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/functions.h"
+#include "functions.h"
 
 void	ft_putchar(char c)
 {

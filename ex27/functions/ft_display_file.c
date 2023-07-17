@@ -6,11 +6,11 @@
 /*   By: arsobrei <arsobrei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/12 18:05:35 by arsobrei          #+#    #+#             */
-/*   Updated: 2023/07/15 10:53:05 by arsobrei         ###   ########.fr       */
+/*   Updated: 2023/07/17 18:16:24 by arsobrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/functions.h"
+#include "functions.h"
 
 int	ft_display_file(char *file_name)
 {
