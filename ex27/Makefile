@@ -10,17 +10,15 @@ SOURCES = \
 	./functions/ft_display_file.c \
 	./src/main.c \
 
-OBJECTS = \
-	./ft_putchar.o \
-	./ft_putstr.o \
-	./ft_display_file.o \
-	./main.o \
+OBJECTS = $(SOURCES:%.c=%.o)
 
 all: $(NAME)
 
-$(NAME):
-	$(CC) $(CFLAGS) -c $(SOURCES) -I $(HEADER)
+$(NAME): $(OBJECTS)
 	$(CC) $(CFLAGS) -o $(NAME) $(OBJECTS)
+
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@ -I $(HEADER)
 
 clean:
 	rm -f $(OBJECTS)
@@ -29,3 +27,5 @@ fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
+
+.PHONY: all clean fclean re
