@@ -6,11 +6,11 @@
 /*   By: arsobrei <arsobrei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/13 09:34:54 by arsobrei          #+#    #+#             */
-/*   Updated: 2023/07/13 11:04:51 by arsobrei         ###   ########.fr       */
+/*   Updated: 2023/07/17 18:17:41 by arsobrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/functions.h"
+#include "functions.h"
 
 int	main(int argc, char *argv[])
 {
