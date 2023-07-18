@@ -14,12 +14,12 @@ OBJECTS = $(SOURCES:%.c=%.o)  # Creates objects from sources, changing their ext
 
 all: $(NAME)
 
-$(NAME): $(OBJECTS)
-	$(CC) $(CFLAGS) -o $(NAME) $(OBJECTS)
-
 %.o: %.c  # Indicates that the rule will be applied to any object file (%.o) whose dependency (%.c) is a source file with the same base name.  
 # Turns each (.c) file into a (.o) file needed to create the final executable.
 	$(CC) $(CFLAGS) -c $< -o $@ -I $(HEADER)
+
+$(NAME): $(OBJECTS)
+	$(CC) $(CFLAGS) -o $(NAME) $(OBJECTS)
 
 clean:
 	rm -f $(OBJECTS)
